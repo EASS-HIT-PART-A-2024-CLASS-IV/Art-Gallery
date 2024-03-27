@@ -1,6 +1,7 @@
 # ArtGallery
 
-Welcome to the ArtGallery repository! ArtGallery is a dynamic web application designed to showcase a curated collection of artworks. This application is structured into a frontend and backend, encapsulating the user interface and data management logic separately for better maintainability and scalability.
+Welcome to the ArtGallery repository!
+ArtGallery is a dynamic web application designed to showcase a curated collection of artworks. This application is structured into a frontend and backend, encapsulating the user interface and data management logic separately for better maintainability and scalability.
 
 ## Quick Start
 
@@ -10,6 +11,8 @@ To get ArtGallery up and running on your machine, ensure you have Docker install
 
 - Docker
 - Docker Compose
+- Python 3 (for running tests)
+- pytest (for running tests)
 
 ### Installation
 
@@ -22,29 +25,16 @@ To get ArtGallery up and running on your machine, ensure you have Docker install
    cd ArtGallery
    ```
 
-2. **Build the Docker Images**
 
-   Navigate to both the backend and frontend directories to build their respective Docker images:
+2. **Start the Application with Docker Compose**
 
-   ```bash
-   cd Backend
-   docker build -t backend:latest .
-   cd ../Frontend
-   docker build -t frontend:latest .
-   ```
-
-   This will create the Docker images for both parts of the application.
-
-3. **Run Docker Compose**
-
-   Return to the root directory of the project and run Docker Compose to start the application:
+   From the root directory of the project, run Docker Compose to start the application. Docker Compose will automatically build (or rebuild) the images as necessary and start all the services defined in the docker-compose.yml file:
 
    ```bash
-   cd ..
    docker-compose up --build -d
    ```
 
-   This command starts all the necessary services as defined in the `docker-compose.yml` file.
+   This command streamlines the process, eliminating the need to manually build each image beforehand.
 
 ### Accessing the Application
 
@@ -53,14 +43,33 @@ After starting the services, the ArtGallery application should be accessible thr
 - **Frontend:** http://localhost:5173
 - **Backend:** http://localhost:8000
 
+## Testing
+
+To ensure the quality and reliability of the backend service, we employ pytest for running our suite of automated tests. Follow these steps to execute the tests:
+
+1. **Install pytest**
+If you haven't already installed `pytest`, you can do so by running:
+
+```bash
+pip install pytest
+```
+
+2. **Run the Tests**
+Navigate to the Backend directory where the `tests` folder is located, and run `pytest`:
+
+```bash
+cd Backend
+pytest tests
+```
+
+`pytest` will automatically discover and run all `tests` in the tests directory, reporting the results in the terminal.
+
 ## Features
 
-ArtGallery offers a range of features designed to enhance the experience of exploring and enjoying art, including:
+ArtGallery offers a range of features designed to enhance the experience of exploring and enjoying art:
 
-- **Artwork Showcase:** Browse through a collection of artworks displayed in a user-friendly interface.
-- **Artist Information:** Learn more about the artists behind the masterpieces.
-- **Responsive Design:** Enjoy the gallery on any device, thanks to a responsive web design.
+- **Artwork Showcase:** A curated collection of artworks is displayed in an intuitive and user-friendly interface.
+- **Artist Information:** Gain insights into the lives and works of the artists behind the masterpieces.
+- **Responsive Design:** The gallery is accessible on any device, thanks to responsive web design principles ensuring a seamless experience across platforms.
 
-# Art-Gallery
-# Art-Gallery
-# Art-Gallery
+Enjoy exploring the ArtGallery!
