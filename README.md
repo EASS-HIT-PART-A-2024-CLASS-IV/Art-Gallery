@@ -1,7 +1,6 @@
 # ArtGallery
 
-Welcome to the ArtGallery repository!
-ArtGallery is a dynamic web application designed to showcase a curated collection of artworks. This application is structured into a frontend and backend, encapsulating the user interface and data management logic separately for better maintainability and scalability.
+Welcome to the ArtGallery repository! ArtGallery is a dynamic web application built using a microservices architecture, designed to showcase a curated collection of artworks through an interactive and user-friendly interface. This project comprises four key microservices: a PostgreSQL database for efficient data storage and retrieval, a frontend service providing the interactive user interface, a backend service handling the business logic and data management, and a local AWS S3 Bucket simulation for storing and serving multimedia content. By structuring the application into separate microservices for the user interface, data management, and storage, ArtGallery achieves better maintainability, scalability, and ease of deployment, making it an exemplary model of modern software architecture.
 
 ## Quick Start
 
@@ -72,4 +71,7 @@ ArtGallery offers a range of features designed to enhance the experience of expl
 - **Artist Information:** Gain insights into the lives and works of the artists behind the masterpieces.
 - **Responsive Design:** The gallery is accessible on any device, thanks to responsive web design principles ensuring a seamless experience across platforms.
 
+<<<<<<< HEAD
 Enjoy exploring the ArtGallery!
+=======
+>>>>>>> 048994cfabfef9d12d02a4ca16b880debbee71ea
