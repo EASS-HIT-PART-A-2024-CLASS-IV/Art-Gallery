@@ -71,7 +71,4 @@ ArtGallery offers a range of features designed to enhance the experience of expl
 - **Artist Information:** Gain insights into the lives and works of the artists behind the masterpieces.
 - **Responsive Design:** The gallery is accessible on any device, thanks to responsive web design principles ensuring a seamless experience across platforms.
 
-<<<<<<< HEAD
 Enjoy exploring the ArtGallery!
-=======
->>>>>>> 048994cfabfef9d12d02a4ca16b880debbee71ea
